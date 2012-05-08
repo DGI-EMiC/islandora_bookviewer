@@ -6,3 +6,267 @@
 #BRtoolbar .embed, .print {
     display: none;
 }
+
+body
+{
+  font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif;
+  font-size: 12px;
+}
+
+.BRicon
+{
+  background-image: url(../images/emic/BRicons-emic.png);
+}
+
+a.logo
+{
+  display: none;
+}
+
+#BRreturn
+{
+  color: #fff;
+
+  font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif;
+  font-size: 20px;
+}
+
+#BRreturn a
+{
+  padding: 3px 0px 0px 20px;
+  color: #fff;
+  
+  text-decoration: none;
+
+  font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif;
+  font-size: 20px;
+}
+
+#BRreturn a:hover
+{
+  text-decoration: underline;
+}
+
+#BRtoolbar
+{
+  background: url('../images/emic/bg-bar-emic.png') left top repeat-x #1c266b;
+  
+  -webkit-box-shadow: 0px 5px 5px 0px #333; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+          box-shadow: 0px 5px 5px 0px #333; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+
+}
+
+div#BRnav,
+.BRnavCntl
+{
+  background-color: #1c266b;
+/*   background: url('../images/emic/bg-bar-emic.png') left top repeat-x #1c266b; */
+}
+
+.BRpagediv1up,
+.BRpagedivthumb
+{
+/*   background-color: #ddd; */
+}
+
+.BRpageimage
+{
+
+}
+
+.BRdn
+{
+  background-image: url('../images/emic/nav_control-dn-emic.png');
+}
+
+.BRup
+{
+  background-image: url('../images/emic/nav_control-up-emic.png');
+}
+
+div#BRnavline,
+.BRnavend
+{
+  background-color: #fff;
+}
+
+div#pagenum span
+{
+  color: #1c266b;
+}
+
+#BRpager .ui-slider-handle
+{
+  background-image: url('../images/emic/slider-emic.png');
+}
+
+div#pagenum
+{
+  background-color: #fff;
+}
+
+
+
+#cboxContent
+{
+  border: 0px;
+
+  font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif;
+  font-weight: normal;
+  
+  -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android ²1.6 */
+          border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4+, iOS 4, Android 2.1+ */
+
+  /* useful if you don't want a bg color from leaking outside the border: */
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+
+}
+
+#cboxLoadedContent
+{
+  padding: 3px 3px 10px 3px;
+  font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif;
+  font-weight: normal;
+  
+  -webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android ²1.6 */
+          border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4+, iOS 4, Android 2.1+ */
+
+  /* useful if you don't want a bg color from leaking outside the border: */
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+.BRfloatHead
+{
+  padding: 3px 0px 0px 20px;
+  margin-bottom: 7px;
+
+  background: url('../images/emic/bg-bar-emic.png') left top repeat-x #1c266b;
+  font-weight: normal;
+  
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif;
+  
+  
+  -webkit-border-radius: 5px 5px 0px 0px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
+          border-radius: 5px 5px 0px 0px; /* Opera 10.5, IE9, Saf5, Chrome, FF4+, iOS 4, Android 2.1+ */
+
+  /* useful if you don't want a bg color from leaking outside the border: */
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+
+
+.BRfloatBody,
+.BRfloatBody a,
+.BRfloatBody .BRfloatTitle a
+{
+  font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+.BRfloatBody a:hover,
+.BRfloatBody .BRfloatTitle a:hover
+{
+  text-decoration: underline;
+  color: #000;
+}
+
+
+.BRfloatFoot a,
+.BRfloatFoot span
+{
+  font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif;
+  font-weight: normal;
+  
+  color: #333;
+  text-decoration: none;
+}
+
+.BRfloatFoot a:hover
+{
+  text-decoration: underline;
+  color: #000;
+}
+
+.BRfloat a.floatShut
+{
+  background-image: url('../images/emic/icon_close-pop-emic');
+  margin: 2px;
+}
+
+.BRfloat p
+{
+  font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+  font-size: 12px;
+}
+
+.BRfloat input[type="text"], .BRfloat textarea
+{
+  font-size: 11px;
+}
+
+.BRfloat label
+{
+  font-size: 15px;
+}
+
+.BRfloat button[type="button"]
+{
+  background: none repeat scroll 0 0 #E6E6E6;
+  border: 1px solid #BBBBBB;
+  font-size: 12px;
+  cursor: pointer;
+  color: #555;
+  font-family: Verdana,Arial,sans-serif;
+
+  -webkit-border-radius: 4px; /* Saf3-4, iOS 1-3.2, Android ²1.6 */
+          border-radius: 4px; /* Opera 10.5, IE9, Saf5, Chrome, FF4+, iOS 4, Android 2.1+ */
+
+  /* useful if you don't want a bg color from leaking outside the border: */
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+
+}
+
+.BRfloat button[type="button"]:hover
+{
+  color: #333;
+}
+
+.BRfloat button[type="button"]:active
+{
+  color: #333;
+  background-color: #fff;
+}
+
+
+
+
+/* Background */
+
+body,
+#BRcontainer,
+#BRpageview,
+#BRpageview
+{
+  background-color: #9A9B9D!important;
+}
+
+
+.BRfloatMeta
+{
+  min-height: 5px;
+}
+
+
+
+
+
+
+
+
+
+
