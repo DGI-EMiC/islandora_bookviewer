@@ -261,9 +261,10 @@ body,
   min-height: 5px;
 }
 
-
-
-
+form#booksearch input[type="search"] 
+{
+  padding: 0px 0px 0px 5px;
+}
 
 
 
