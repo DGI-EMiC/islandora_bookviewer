@@ -45,6 +45,7 @@
       br.getPageWidth = function(index) {
         return br.width;
       }
+      
 
       // Return the height of a given page.
       br.getPageHeight = function(index) {
@@ -59,15 +60,18 @@
         // or pass the information to an image server
         var leafStr = br.structMap[index+1];//get the pid of the object from the struct map islandora specific
        // var url = br.djatoka_prefix + br.islandora_prefix + leafStr + '/JP2/&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/png&svc.level=' + br.compression + '&svc.rotate=0';
-       var url = br.djatoka_prefix + br.fedora_prefix + '/objects/' + leafStr + '/datastreams/JP2/content&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/png&svc.level=' + br.compression + '&svc.rotate=0';
-        
+
+       var url = br.djatoka_prefix + br.fedora_prefix + '/objects/' + leafStr + '/datastreams/' + islandora_params.image_type + '/content&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/png&svc.level=' + br.compression + '&svc.rotate=0';
+        if(islandora_params.image_type == "JPEG"){
+          url = islandora_params.ISLANDORA_PREFIX + leafStr + '/JPEG';
+        }
         return url;
       }
       
       br.getOcrURI = function (index){
         var indices = br.getSpreadIndices(index);
-        var pidL = br.structMap[indices[0]+1]; // pid for left page
-        var pidR = br.structMap[indices[1]+1]; // pid for right page
+        var pidL = br.structMap[indices[0]]; // pid for left page
+        var pidR = br.structMap[indices[1]]; // pid for right page
         if (typeof pidL == 'undefined') { pidL = '-'; }
         if (typeof pidR == 'undefined') { pidR = '-'; }
         return br.baseUrl+"/bookreader/ocr/" + pidL + '/' + pidR ;
